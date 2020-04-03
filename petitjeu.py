@@ -1,19 +1,10 @@
 from Crypto.Random.random import randrange #pour le chiffre au hazard
-from ipywidgets import interact, interactive, fixed, interact_manual
-import ipywidgets as widgets
-
 
 print('hello bienvenue sur mosti.ca')
 
 #on va demander le nombre max
 print ("dis moi le nombre le plus haut")
-#nombremax=input("->")
-nombremax = widgets.Text(value='',
-                         placeholder = 'type here',
-                         description = 'nombre max:',
-                         disabled    = False)
-interact(nombremax)
-#nombremax
+nombremax=input("->")
 
 #on va demander les nombre de vie
 print ("dis moi le nombre de vies que tu desires")
